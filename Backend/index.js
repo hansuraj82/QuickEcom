@@ -11,12 +11,21 @@ const cartRoutes = require('./routes/cartRoute');
 
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+    origin: 'https://quick-ecom-mu.vercel.app/', // Allow requests from this origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow only these methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Adjust the allowed headers if necessary
+  };
+
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.use('/api/v1/main',(req,res) => {
     res.status(200).json({msg: "hey there everyone"});
 })
+
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/items', itemsRoutes);
 app.use('/api/v1/cart', cartRoutes);
