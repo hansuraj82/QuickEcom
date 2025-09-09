@@ -13,7 +13,7 @@ const cartRoutes = require('./routes/cartRoute');
 const app = express();
 
 const corsOptions = {
-    origin: 'https://quick-ecom-mu.vercel.app/', // Allow requests from this origin
+    origin: 'https://quick-ecom-mu.vercel.app', // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow only these methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Adjust the allowed headers if necessary
   };
