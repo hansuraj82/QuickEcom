@@ -30,3 +30,8 @@ It provides product browsing, cart management, authentication, and order handlin
 - MongoDB + Mongoose
 - JWT Authentication
 - Bcrypt (password hashing)
+
+---
+
+git clone https://github.com/your-username/quickecom.git
+cd quickecom
