@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { Dialog } from '@headlessui/react';
 
 export default function Signup({ onSignup }) {
-    document.title = 'Signup |  QuickEcom'; // you can adjust name
+    document.title = 'Signup |  QuickEcom'; 
   
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [loading, setLoading] = useState(false);
