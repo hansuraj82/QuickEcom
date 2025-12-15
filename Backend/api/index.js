@@ -52,7 +52,7 @@ import express from "express";
 const app = express();
 
 app.get("/api", (_req, res) => {
-  res.status(200).json({ msg: "home endpoint works" });
+  res.status(404).json({ msg: "home endpoint works" });
 });
 
 export default function handler(req, res) {
