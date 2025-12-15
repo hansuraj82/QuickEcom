@@ -5,6 +5,7 @@
   "scripts": {
     "build": "echo \"No build step required\""
   },
+  "type": "module",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",

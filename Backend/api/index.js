@@ -47,6 +47,21 @@
 
 
 
+import express from "express";
+
+const app = express();
+
+app.get("/", (_req, res) => {
+  res.status(200).json({ msg: "home endpoint works" });
+});
+
 export default function handler(req, res) {
-  res.status(200).json({ ok: true });
+  return app(req, res);
 }
+
+export const config = {
+  runtime: "nodejs"
+};
+
+
+
