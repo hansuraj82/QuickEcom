@@ -17,6 +17,11 @@ app.use(bodyParser.json());
 app.use("/api/v1/main", (req, res) => {
   res.status(200).json({ msg: "hey there everyone" });
 });
+
+app.use("/", (req,res)=> {
+  res.send("hello")
+})
+
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/items", itemsRoutes);
 app.use("/api/v1/cart", cartRoutes);
